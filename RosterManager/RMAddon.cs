@@ -313,7 +313,7 @@ namespace RosterManager
           {
             if (HighLogic.LoadedScene == GameScenes.SPACECENTER || HighLogic.LoadedScene == GameScenes.EDITOR || HighLogic.LoadedScene == GameScenes.TRACKSTATION || HighLogic.LoadedScene == GameScenes.FLIGHT)
             {
-              _rmRosterBlizzy = ToolbarManager.Instance.add("RosterManager", "Roster");
+              _rmRosterBlizzy = ToolbarManager.Instance.Add("RosterManager", "Roster");
               _rmRosterBlizzy.TexturePath = WindowSettings.ShowWindow ? TextureFolder + "Icon_On_24" : TextureFolder + "Icon_Off_24";
               _rmRosterBlizzy.ToolTip = Localizer.Format("#autoLOC_RM_1000");		// #autoLOC_RM_1000 = Roster Manager Roster Window
               _rmRosterBlizzy.Visibility = new GameScenesVisibility(GameScenes.SPACECENTER);

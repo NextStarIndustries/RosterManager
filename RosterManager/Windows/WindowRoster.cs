@@ -549,6 +549,34 @@ namespace RosterManager.Windows
       isTourist = GUILayout.Toggle(isTourist, Localizer.Format("#autoLOC_RM_1039"), GUILayout.Width(80));		// #autoLOC_RM_1039 = Tourist
       if (isTourist) _typeOfProfession = ProfessionType.Tourist;
 
+      bool isMiner = KerbalProfession == ProfessionType.Miner.ToString();
+      isMiner = GUILayout.Toggle(isMiner, Localizer.Format("Miner"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isMiner) _typeOfProfession = ProfessionType.Miner;
+
+      bool isFighterPilot = KerbalProfession == ProfessionType.FighterPilot.ToString();
+      isFighterPilot = GUILayout.Toggle(isFighterPilot, Localizer.Format("Fighter Pilot"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isFighterPilot) _typeOfProfession = ProfessionType.FighterPilot;
+
+      bool isBomberPilot = KerbalProfession == ProfessionType.BomberPilot.ToString();
+      isBomberPilot = GUILayout.Toggle(isBomberPilot, Localizer.Format("Bomber Pilot"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isBomberPilot) _typeOfProfession = ProfessionType.BomberPilot;
+
+      bool isNavyCaptain = KerbalProfession == ProfessionType.NavyCaptain.ToString();
+      isNavyCaptain = GUILayout.Toggle(isNavyCaptain, Localizer.Format("Navy Captain"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isNavyCaptain) _typeOfProfession = ProfessionType.NavyCaptain;
+
+      bool isOrbitalFighterPilot = KerbalProfession == ProfessionType.OrbitalFighterPilot.ToString();
+      isOrbitalFighterPilot = GUILayout.Toggle(isOrbitalFighterPilot, Localizer.Format("Orbital Fighter Pilot"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isOrbitalFighterPilot) _typeOfProfession = ProfessionType.OrbitalFighterPilot;
+
+      bool isTankCommander = KerbalProfession == ProfessionType.TankCommander.ToString();
+      isTankCommander = GUILayout.Toggle(isTankCommander, Localizer.Format("Tank Commander"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isTankCommander) _typeOfProfession = ProfessionType.TankCommander;
+
+      bool isReconPilot = KerbalProfession == ProfessionType.ReconPilot.ToString();
+      isReconPilot = GUILayout.Toggle(isReconPilot, Localizer.Format("Recon Pilot"), GUILayout.Width(80));     // #autoLOC_RM_1039 = Tourist
+      if (isReconPilot) _typeOfProfession = ProfessionType.ReconPilot;
+
       GUI.enabled = true;
       GUILayout.EndHorizontal();
     }
@@ -1044,7 +1072,14 @@ namespace RosterManager.Windows
       Pilot,
       Engineer,
       Scientist,
-      Tourist
+      Tourist,
+      Miner,
+      FighterPilot,
+      BomberPilot,
+      NavyCaptain,
+      OrbitalFighterPilot,
+      TankCommander,
+      ReconPilot
     }
     #endregion
   }
